@@ -9,7 +9,7 @@ Código de ejemplo del patrón [Singleton](https://en.wikipedia.org/wiki/Singlet
 En este ejemplo la clase `Greeter` es un singleton: solo existe una instancia de esa clase a la cual se accede mediante
 una propiedad de clase `Instance` de tipo `Greeter`.
 
-Además la clase `Greeter` implementa un método de instancia `void SayHiToTheWorld()` que el verdadero propósito de esta
+Además la clase `Greeter` implementa un método de instancia `void SayHiToTheWorld()` que es el verdadero propósito de esta
 clase.
 
 ### Deafío
@@ -26,7 +26,7 @@ static void Main(string[] args)
 }
 ```
 
-Como la implementación del singleton les va a quedar en `Singleton<T>`, dejen en `Greeter` solo el método
+Como la implementación del singleton les va a quedar en `Singleton<T>`, dejen en `Greeter` sólo el método
 `void SayHiToTheWorld()`.
 
 El tipo genérico `Singleton<T>` crea una instancia de `T`; para que eso sea posible es necesario agregar una restricción
